@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111313" />
+    <meta name="description" content="Liq Budz brings authentic East African spirits, beers and party packs to homes, events and carnivals across Germany and Europe." />
+    <title>Liq Budz — The taste of home, delivered</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="age-locked">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <!-- Age verification -->
+    <div class="age-gate is-visible" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-title" aria-describedby="age-description">
+      <div class="age-gate-backdrop"></div>
+      <div class="age-card">
+        <div class="age-card-noise" aria-hidden="true"></div>
+        <div class="age-mark" aria-hidden="true">
+          <span>LB</span>
+          <i></i>
+        </div>
+        <p class="eyebrow eyebrow-gold">Welcome to Liq Budz</p>
+        <h2 id="age-title">Good nights start<br /><em>responsibly.</em></h2>
+        <p class="age-copy" id="age-description">Are you 18 or older? You must be of legal drinking age in your country to enter.</p>
+        <div class="age-actions">
+          <button class="btn btn-primary btn-wide" id="age-yes" type="button">Yes, I am 18+ <span aria-hidden="true">↗</span></button>
+          <button class="btn btn-text" id="age-no" type="button">No, Exit</button>
+        </div>
+        <p class="age-fine">By entering, you confirm you are of legal drinking age where you live.<br />Please enjoy Liq Budz responsibly.</p>
+      </div>
+    </div>
+
+    <div class="site-shell">
+      <div class="announcement-bar">
+        <div class="announcement-inner">
+          <p><span class="pulse-dot"></span> Now pouring across Germany + the EU</p>
+          <p class="announcement-hide-mobile">Free delivery on orders over €75 <span class="announcement-separator">/</span> Age-verified at checkout</p>
+          <a href="#events">Need a bulk order? <span>Let's talk&nbsp; →</span></a>
+        </div>
+      </div>
+
+      <header class="site-header" id="site-header">
+        <div class="container header-inner">
+          <a class="brand" href="#top" aria-label="Liq Budz home">
+            <span class="brand-badge">LB</span>
+            <span class="brand-name"><strong>LIQ</strong><span>BUDZ</span></span>
+          </a>
+          <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#shop">Shop <span>⌄</span></a>
+            <a href="#story">Our story</a>
+            <a href="#events">For events</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="header-actions">
+            <button class="icon-button header-search" type="button" aria-label="Search products" data-toast="Search is coming soon — browse the drop below.">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.2"></circle><path d="m16 16 5 5"></path></svg>
+            </button>
+            <button class="cart-button" type="button" id="cart-open" aria-label="Open shopping cart">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 5.5h2l1.5 10.2a1.7 1.7 0 0 0 1.7 1.5h8.9a1.7 1.7 0 0 0 1.7-1.5L20.5 8H6.2"></path><circle cx="9.2" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg>
+              <span>Cart</span><b id="cart-count">0</b>
+            </button>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+          </div>
+        </div>
+        <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+          <a href="#shop">Shop <span>↗</span></a>
+          <a href="#story">Our story <span>↗</span></a>
+          <a href="#events">For events <span>↗</span></a>
+          <a href="#faq">FAQ <span>↗</span></a>
+          <button class="mobile-order-link" type="button" data-open-event>Request an event quote <span>↗</span></button>
+        </nav>
+      </header>
+
+      <main id="top">
+        <!-- Hero -->
+        <section class="hero section-grid" aria-labelledby="hero-title">
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-image-wrap"><img src="assets/hero-liq-budz.png" alt="" /></div>
+            <div class="hero-image-fade"></div>
+            <div class="hero-stamp"><span class="stamp-line"></span><span>THE<br />TASTE<br />OF HOME</span><span class="stamp-line"></span></div>
+            <div class="hero-index"><strong>01</strong><span>/</span><span>04</span></div>
+          </div>
+          <div class="container hero-content">
+            <div class="hero-copy">
+              <p class="eyebrow"><span class="eyebrow-dot"></span> East Africa's finest, now in Europe</p>
+              <h1 id="hero-title">Authentic <em>East African</em> spirits, <span>delivered.</span></h1>
+              <p class="hero-lead">From iconic spirits to party packs—your favorite tastes brought straight to your events, carnivals, and doorstep.</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#shop">Shop spirits <span aria-hidden="true">↗</span></a>
+                <button class="btn btn-outline" type="button" data-open-event>Pre-order for events <span aria-hidden="true">↗</span></button>
+              </div>
+              <div class="hero-proof">
+                <div class="avatar-stack" aria-hidden="true"><span>AM</span><span>JO</span><span>NK</span><span>+</span></div>
+                <div><strong>Loved by the diaspora</strong><span>4.9/5 from our first 500+ pours</span></div>
+              </div>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#shop"><span class="scroll-line"></span><span>Scroll to discover</span><span class="scroll-arrow">↓</span></a>
+        </section>
+
+        <div class="ticker" aria-label="Liq Budz product highlights">
+          <div class="ticker-track">
+            <span>Uganda Waragi</span><i>✦</i><span>Nile Special</span><i>✦</i><span>Banana Wine</span><i>✦</i><span>Made for good nights</span><i>✦</i><span>Uganda Waragi</span><i>✦</i><span>Nile Special</span><i>✦</i><span>Banana Wine</span><i>✦</i><span>Made for good nights</span><i>✦</i>
+          </div>
+        </div>
+
+        <!-- Category grid -->
+        <section class="category-section section-pad" id="shop" aria-labelledby="categories-title">
+          <div class="container">
+            <div class="section-heading split-heading">
+              <div><p class="eyebrow eyebrow-gold">Find your pour</p><h2 id="categories-title">Stock your next <em>story.</em></h2></div>
+              <p class="section-intro">Authentic bottles, bold flavors, and the kind of energy you can taste. Curated for the way we celebrate.</p>
+            </div>
+            <div class="category-grid">
+              <a class="category-card category-spirits" href="#featured" data-filter-link="spirits">
+                <div class="category-topline"><span>01</span><span>Explore →</span></div>
+                <div class="category-copy"><p class="category-kicker">The classics, elevated</p><h3>Spirits<br /><em>&amp; Gin</em></h3><p>Uganda Waragi &amp; regional craft spirits.</p></div>
+                <div class="category-art spirits-art" aria-hidden="true"><div class="bottle bottle-amber"><span class="bottle-neck"></span><span class="bottle-label">UG<br /><b>GIN</b></span></div><div class="glass-shadow"></div></div>
+              </a>
+              <a class="category-card category-beers" href="#featured" data-filter-link="beer">
+                <div class="category-topline"><span>02</span><span>Explore →</span></div>
+                <div class="category-copy"><p class="category-kicker">Cold, crisp, connected</p><h3>Beers &amp;<br /><em>Ferments</em></h3><p>African beers and banana wines.</p></div>
+                <div class="category-art beers-art" aria-hidden="true"><div class="can can-gold"><span>NILE<br /><b>5°</b></span></div><div class="can can-red"><span>CLUB<br /><b>BEER</b></span></div><span class="ice ice-one"></span><span class="ice ice-two"></span></div>
+              </a>
+              <a class="category-card category-bundles" href="#featured" data-filter-link="bundle">
+                <div class="category-topline"><span>03</span><span>Explore →</span></div>
+                <div class="category-copy"><p class="category-kicker">Big energy, better value</p><h3>Party &amp;<br /><em>Carnival packs</em></h3><p>Bulk bundles for your biggest nights.</p></div>
+                <div class="category-art bundle-art" aria-hidden="true"><div class="crate"><span>LB</span><i></i><i></i><i></i></div><div class="mini-bottle mini-one"></div><div class="mini-bottle mini-two"></div><span class="burst">SAVE<br /><b>15%</b></span></div>
+              </a>
+              <a class="category-card category-mixers" href="#featured" data-filter-link="mixer">
+                <div class="category-topline"><span>04</span><span>Explore →</span></div>
+                <div class="category-copy"><p class="category-kicker">Pour. Mix. Repeat.</p><h3>Premix &amp;<br /><em>Mixers</em></h3><p>Bright pairings for easy hosting.</p></div>
+                <div class="category-art mixers-art" aria-hidden="true"><div class="highball highball-one"><span></span><i></i></div><div class="highball highball-two"><span></span><i></i></div><div class="lime lime-one"></div><div class="lime lime-two"></div></div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Featured products -->
+        <section class="featured-section section-pad" id="featured" aria-labelledby="featured-title">
+          <div class="container">
+            <div class="section-heading split-heading featured-heading">
+              <div><p class="eyebrow eyebrow-gold">The first pour</p><h2 id="featured-title">Bottles with <em>roots.</em></h2></div>
+              <div class="featured-side"><p class="section-intro">Straight from the source. Pick your mood, then make it a night.</p><a href="#featured" class="text-link">View all bottles <span>↗</span></a></div>
+            </div>
+            <div class="filter-row" role="group" aria-label="Filter products">
+              <button class="filter-btn is-active" type="button" data-filter="all">All bottles</button>
+              <button class="filter-btn" type="button" data-filter="spirits">Spirits &amp; gin</button>
+              <button class="filter-btn" type="button" data-filter="beer">Beer &amp; ferments</button>
+              <button class="filter-btn" type="button" data-filter="bundle">Party packs</button>
+            </div>
+            <div class="product-grid" id="product-grid">
+              <article class="product-card" data-product-category="spirits" data-product-id="waragi">
+                <div class="product-visual visual-waragi"><span class="product-tag">Bestseller</span><div class="product-bottle product-bottle-green"><span class="neck"></span><span class="foil"></span><span class="label"><small>UGANDA</small><b>WARAGI</b><i>PREMIUM<br />GIN</i></span></div><span class="visual-shadow"></span></div>
+                <div class="product-info"><div><p class="product-category">Spirits · 40% ABV</p><h3>Uganda Waragi Premium</h3><p class="product-size">700ml bottle</p></div><strong class="product-price">€29.90</strong></div>
+                <button class="add-btn" type="button" data-add-product data-id="waragi" data-name="Uganda Waragi Premium" data-price="29.90"><span>Add to basket</span><b>+</b></button>
+              </article>
+              <article class="product-card" data-product-category="beer" data-product-id="nile">
+                <div class="product-visual visual-nile"><span class="product-tag tag-blue">Chilled energy</span><div class="product-can"><span class="can-rim"></span><span class="can-label"><small>NILE</small><b>SPECIAL</b><i>LAGER BEER<br />UGANDA</i></span></div><span class="visual-shadow"></span></div>
+                <div class="product-info"><div><p class="product-category">Beer · 5% ABV</p><h3>Nile Special Lager</h3><p class="product-size">6 × 500ml cans</p></div><strong class="product-price">€18.90</strong></div>
+                <button class="add-btn" type="button" data-add-product data-id="nile" data-name="Nile Special Lager" data-price="18.90"><span>Add to basket</span><b>+</b></button>
+              </article>
+              <article class="product-card" data-product-category="beer" data-product-id="banana">
+                <div class="product-visual visual-banana"><span class="product-tag tag-pink">New drop</span><div class="product-bottle product-bottle-cream"><span class="neck"></span><span class="foil"></span><span class="label"><small>FROM THE</small><b>BANANA</b><i>WINE<br />KAMPALA</i></span></div><span class="banana-leaf leaf-a"></span><span class="banana-leaf leaf-b"></span><span class="visual-shadow"></span></div>
+                <div class="product-info"><div><p class="product-category">Ferment · 12% ABV</p><h3>Banange Banana Wine</h3><p class="product-size">750ml bottle</p></div><strong class="product-price">€24.50</strong></div>
+                <button class="add-btn" type="button" data-add-product data-id="banana" data-name="Banange Banana Wine" data-price="24.50"><span>Add to basket</span><b>+</b></button>
+              </article>
+              <article class="product-card" data-product-category="bundle" data-product-id="party-pack">
+                <div class="product-visual visual-bundle"><span class="product-tag tag-orange">Save 15%</span><div class="bundle-rack"><span class="rack-logo">LIQ<br /><b>BUDZ</b></span><i></i><i></i><i></i><i></i></div><span class="burst-small">12<br /><b>POURS</b></span><span class="visual-shadow"></span></div>
+                <div class="product-info"><div><p class="product-category">Bundle · Best value</p><h3>Kampala Party Pack</h3><p class="product-size">12 bottles &amp; mixers</p></div><strong class="product-price">€119.00</strong></div>
+                <button class="add-btn" type="button" data-add-product data-id="party-pack" data-name="Kampala Party Pack" data-price="119.00"><span>Add to basket</span><b>+</b></button>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- Story / editorial -->
+        <section class="story-section section-pad" id="story" aria-labelledby="story-title">
+          <div class="container story-layout">
+            <div class="story-art" aria-hidden="true"><div class="story-ring ring-one"></div><div class="story-ring ring-two"></div><span class="story-number">02</span><div class="story-badge">EST.<br /><b>256</b></div><span class="story-word">ROOTED</span></div>
+            <div class="story-copy"><p class="eyebrow eyebrow-gold">More than a bottle</p><h2 id="story-title">A little piece of <em>home.</em></h2><p>We grew up with these flavors at the center of every good story. Liq Budz brings that feeling to Europe—authentic, easy to order, and ready for whatever you are celebrating next.</p><p class="story-note"><span class="note-mark">✦</span> Imported with intention. Shared with joy.</p><a class="btn btn-outline" href="#faq">Why Liq Budz <span>↗</span></a></div>
+          </div>
+        </section>
+
+        <!-- Event / bulk quote -->
+        <section class="event-section section-pad" id="events" aria-labelledby="events-title">
+          <div class="container">
+            <div class="event-card">
+              <div class="event-pattern pattern-left" aria-hidden="true"></div>
+              <div class="event-copy"><p class="eyebrow eyebrow-dark">For the big nights</p><h2 id="events-title">Bring the <em>source</em><br />to your crowd.</h2><p>Planning a carnival, club night, wedding, or house mix? We make bulk ordering easy, from the first bottle to the last dance.</p><button class="btn btn-dark" type="button" data-open-event>Request event bulk quote <span>↗</span></button><div class="event-micro"><span class="micro-icon">✦</span><span>Custom packs <b>·</b> EU delivery <b>·</b> Volume pricing</span></div></div>
+              <div class="event-visual" aria-hidden="true"><span class="event-glow"></span><div class="event-bottle event-bottle-one"><span></span><i>WARAGI</i></div><div class="event-bottle event-bottle-two"><span></span><i>NILE</i></div><div class="event-glass"><span></span><i></i></div><div class="event-sticker">POUR<br /><b>BIG</b></div><span class="event-vertical">GOOD NIGHTS / GREAT COMPANY</span></div>
+              <div class="event-pattern pattern-right" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Trust strip -->
+        <section class="trust-section" aria-label="Why shop Liq Budz">
+          <div class="container trust-grid">
+            <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 8h15v15H4zM19 13h5l4 4v6h-9z"></path><circle cx="10" cy="25" r="2.5"></circle><circle cx="24" cy="25" r="2.5"></circle><path d="M23 17h5"></path></svg></span><div><h3>Fast, careful delivery</h3><p>Across Germany &amp; the EU</p></div></div>
+            <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 27 8v7c0 7.5-4.7 11.3-11 13-6.3-1.7-11-5.5-11-13V8z"></path><path d="m10.5 16 3.5 3.5 7.5-8"></path></svg></span><div><h3>100% authentic imports</h3><p>Direct from East Africa</p></div></div>
+            <div class="trust-item"><span class="trust-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="13" width="20" height="15" rx="2"></rect><path d="M10 13V9a6 6 0 0 1 12 0v4M16 19v4"></path></svg></span><div><h3>Secure age-verified checkout</h3><p>Good choices, good nights</p></div></div>
+          </div>
+        </section>
+
+        <!-- FAQ / conversion close -->
+        <section class="faq-section section-pad" id="faq" aria-labelledby="faq-title">
+          <div class="container faq-layout">
+            <div><p class="eyebrow eyebrow-gold">Before the first pour</p><h2 id="faq-title">You asked.<br /><em>We answered.</em></h2><p class="faq-intro">Still curious? Our crew is one message away.</p><a class="whatsapp-inline" href="https://wa.me/4915730000000?text=Hi%20Liq%20Budz%2C%20I%20have%20a%20question" target="_blank" rel="noreferrer"><span class="whatsapp-icon">◔</span> Chat with us on WhatsApp <span>↗</span></a></div>
+            <div class="faq-list">
+              <details open><summary>Where do you deliver? <span>+</span></summary><p>We currently deliver across Germany and selected EU destinations. Your delivery options and duties, if applicable, are shown at checkout.</p></details>
+              <details><summary>Are the bottles authentic? <span>+</span></summary><p>Yes. Every bottle in our collection is sourced through our verified import partners and arrives sealed and ready to share.</p></details>
+              <details><summary>Can you help with a large event order? <span>+</span></summary><p>Absolutely. Tell us your date, location, and estimated bottle count. We will come back with a tailored quote and delivery plan.</p></details>
+              <details><summary>Do I need to be 18 to order? <span>+</span></summary><p>Yes. You must be of legal drinking age in your country to browse, order, and receive alcohol from Liq Budz.</p></details>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-top">
+          <div class="footer-brand"><a class="brand" href="#top" aria-label="Liq Budz home"><span class="brand-badge">LB</span><span class="brand-name"><strong>LIQ</strong><span>BUDZ</span></span></a><p>The taste of home,<br />delivered across Europe.</p><div class="social-links"><a href="#" aria-label="Instagram">ig</a><a href="#" aria-label="TikTok">tk</a><a href="#" aria-label="Facebook">fb</a></div></div>
+          <div class="footer-col"><p class="footer-label">Explore</p><a href="#shop">Shop the drop</a><a href="#story">Our story</a><a href="#events">Event orders</a><a href="#faq">FAQs</a></div>
+          <div class="footer-col"><p class="footer-label">Stay in the loop</p><p class="footer-note">New drops, good-night guides,<br />and the occasional cheeky deal.</p><form class="newsletter-form" id="newsletter-form"><label class="sr-only" for="newsletter-email">Your email address</label><input id="newsletter-email" type="email" placeholder="Your email address" required /><button type="submit" aria-label="Subscribe">↗</button></form><p class="form-success" id="newsletter-success" role="status">You're on the list. Cheers!</p></div>
+        </div>
+        <div class="container footer-bottom"><p>© 2025 Liq Budz. Drink responsibly. 18+</p><nav aria-label="Legal links"><a href="#" data-toast="Impressum page coming soon.">Impressum</a><a href="#" data-toast="Privacy policy page coming soon.">Datenschutz</a><a href="#" data-toast="Terms & conditions page coming soon.">AGB</a><a href="#" data-toast="Shipping information coming soon.">Shipping &amp; Duty</a><a href="#" data-toast="Returns information coming soon.">Returns</a></nav><p class="made-note">Made for <span>✦</span> good nights</p></div>
+      </footer>
+    </div>
+
+    <!-- WhatsApp quick order -->
+    <a class="whatsapp-float" href="https://wa.me/4915730000000?text=Hi%20Liq%20Budz%2C%20I%27d%20like%20to%20place%20an%20order" target="_blank" rel="noreferrer" aria-label="Order on WhatsApp"><span class="whatsapp-float-copy"><b>Quick order?</b><small>Chat with us</small></span><span class="whatsapp-symbol">◔</span></a>
+
+    <!-- Event inquiry dialog -->
+    <div class="modal" id="event-modal" role="dialog" aria-modal="true" aria-labelledby="event-modal-title" hidden>
+      <div class="modal-backdrop" data-close-event></div>
+      <div class="event-dialog">
+        <button class="modal-close" type="button" data-close-event aria-label="Close event quote form">×</button>
+        <div class="dialog-mark">✦</div>
+        <p class="eyebrow eyebrow-gold">Make it a night to remember</p>
+        <h2 id="event-modal-title">Let’s plan<br /><em>your pour.</em></h2>
+        <p class="dialog-intro">Tell us a little about the occasion and our events crew will be in touch with a tailored quote.</p>
+        <form id="event-form">
+          <div class="form-row"><label>Name<input name="name" type="text" placeholder="Your full name" required /></label><label>Event date<input name="date" type="date" required /></label></div>
+          <div class="form-row"><label>Location<input name="location" type="text" placeholder="City, country" required /></label><label>Estimated bottle count<select name="count" required><option value="" disabled selected>Select a range</option><option>12–24 bottles</option><option>25–60 bottles</option><option>60–150 bottles</option><option>150+ bottles</option></select></label></div>
+          <label>Anything else we should know? <span class="optional">Optional</span><textarea name="message" rows="3" placeholder="Tell us about your event, preferred drinks, or delivery needs..."></textarea></label>
+          <button class="btn btn-primary btn-wide" type="submit">Send my event enquiry <span>↗</span></button>
+          <p class="dialog-fine">By submitting, you agree to be contacted about your enquiry. Must be 18+ to order alcohol.</p>
+        </form>
+        <div class="event-success" id="event-success" hidden><span>✦</span><h3>We've got your note.</h3><p>Our events crew will be in touch soon. Time to start the playlist.</p><button class="btn btn-outline" type="button" data-close-event>Back to shop</button></div>
+      </div>
+    </div>
+
+    <!-- Cart drawer -->
+    <div class="cart-layer" id="cart-layer" hidden>
+      <div class="cart-backdrop" id="cart-close-backdrop"></div>
+      <aside class="cart-drawer" aria-labelledby="cart-title" role="dialog" aria-modal="true">
+        <div class="cart-header"><div><p class="eyebrow eyebrow-gold">Your selection</p><h2 id="cart-title">The basket <span id="cart-count-title">(0)</span></h2></div><button class="modal-close" id="cart-close" type="button" aria-label="Close shopping cart">×</button></div>
+        <div class="cart-content" id="cart-content"></div>
+        <div class="cart-footer"><div class="cart-total"><span>Subtotal</span><strong id="cart-total">€0.00</strong></div><p class="cart-shipping-note">Shipping and age verification calculated at checkout.</p><button class="btn btn-primary btn-wide" id="checkout-button" type="button">Continue to checkout <span>↗</span></button><p class="secure-note"><span>⌑</span> Secure, age-verified checkout</p></div>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
