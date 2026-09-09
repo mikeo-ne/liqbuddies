@@ -149,7 +149,8 @@ h1 em, h2 em, h3 em { color: var(--amber); font-family: Georgia, "Times New Roma
 .hero-visual { position: absolute; z-index: 1; top: 0; right: 0; bottom: 0; width: 61%; overflow: hidden; }
 .hero-image-wrap, .hero-image-wrap img { width: 100%; height: 100%; }
 .hero-image-wrap img { object-fit: cover; object-position: 58% center; opacity: .89; }
-.hero-image-fade { position: absolute; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(17, 19, 19, .82) 12%, rgba(17, 19, 19, .14) 57%, rgba(17, 19, 19, .35) 100%), linear-gradient(0deg, rgba(17, 19, 19, .55), transparent 33%, rgba(17, 19, 19, .15)); }
+.hero-image-fade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, var(--ink) 0%, rgba(17, 19, 19, .82) 12%, rgba(17, 19, 19, .14) 57%, rgba(17, 19, 19, .35) 100%), linear-gradient(0deg, rgba(17, 19, 19, .55), transparent 33%, rgba(17, 19, 19, .15)); }
+.hero-product-lineup { position: absolute; z-index: 2; right: 0; bottom: -3%; width: 61%; max-width: 690px; max-height: 91%; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 25px 18px rgba(0, 0, 0, .32)); }
 .hero-stamp { position: absolute; top: 18%; right: 10%; display: flex; align-items: center; gap: 10px; color: rgba(245, 241, 232, .65); font-size: 8px; letter-spacing: .2em; line-height: 1.4; text-align: center; }
 .stamp-line { width: 24px; height: 1px; background: var(--amber); }
 .hero-index { position: absolute; right: 7%; bottom: 11%; display: flex; align-items: center; gap: 10px; color: rgba(245, 241, 232, .6); font-family: var(--display); font-size: 11px; }
@@ -184,6 +185,7 @@ h1 em, h2 em, h3 em { color: var(--amber); font-family: Georgia, "Times New Roma
 .category-copy h3 em { color: inherit; font-size: 1.1em; }
 .category-copy > p:last-child { max-width: 180px; margin: 0; color: rgba(245, 241, 232, .78); font-size: 11px; line-height: 1.5; }
 .category-art { position: absolute; right: 0; bottom: 0; left: 0; height: 59%; }
+.category-photo { position: absolute; z-index: 2; right: -1%; bottom: -11%; width: 116%; height: 142%; object-fit: contain; object-position: center bottom; filter: drop-shadow(0 15px 12px rgba(0, 0, 0, .22)); }
 .category-art::after { position: absolute; content: ""; right: -20%; bottom: -58%; width: 108%; height: 110%; border: 1px solid rgba(245, 241, 232, .18); border-radius: 50%; transform: rotate(-17deg); }
 /* Category visual illustrations */
 .bottle { position: absolute; z-index: 2; bottom: -7px; left: 48%; width: 77px; height: 190px; border-radius: 11px 11px 7px 7px; background: linear-gradient(90deg, rgba(0, 0, 0, .25), rgba(255, 255, 255, .13) 32%, rgba(255, 255, 255, .02) 59%, rgba(0, 0, 0, .28)); box-shadow: 18px 19px 22px rgba(0, 0, 0, .22); transform: rotate(7deg); }
@@ -258,8 +260,11 @@ h1 em, h2 em, h3 em { color: var(--amber); font-family: Georgia, "Times New Roma
 .tag-blue { background: #b9e1dc; }
 .tag-pink { background: #f1b0a8; }
 .tag-orange { background: #f4a444; }
+.product-photo { position: absolute; z-index: 2; right: 17%; bottom: 3px; left: 17%; height: 98%; display: flex; align-items: end; justify-content: center; }
+.product-photo img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: drop-shadow(12px 18px 13px rgba(0, 0, 0, .24)); }
+.product-photo-lemon { right: 22%; left: 22%; bottom: 0; }
 .product-bottle { position: absolute; z-index: 2; bottom: 15px; left: 50%; width: 91px; height: 209px; border-radius: 12px 12px 8px 8px; box-shadow: 17px 18px 25px rgba(0, 0, 0, .26); transform: translateX(-50%) rotate(-4deg); }
-.product-bottle::before { position: absolute; content: ""; z-index: -1; inset: 7px -6px 2px; border-radius: inherit; background: inherit; filter: blur(2px); opacity: .7; }
+.product-bottle::before {  position: absolute; content: ""; z-index: -1; inset: 7px -6px 2px; border-radius: inherit; background: inherit; filter: blur(2px); opacity: .7; }
 .product-bottle .neck { position: absolute; top: -54px; left: 27px; width: 37px; height: 61px; border-radius: 5px 5px 2px 2px; background: inherit; }
 .product-bottle .neck::after { position: absolute; content: ""; top: -8px; left: -2px; width: 41px; height: 11px; border-radius: 3px; background: #17211d; }
 .product-bottle .foil { position: absolute; top: -52px; left: 30px; width: 31px; height: 42px; border-bottom: 1px solid rgba(239, 180, 75, .7); background: #c39037; opacity: .75; }
@@ -541,6 +546,7 @@ h1 em, h2 em, h3 em { color: var(--amber); font-family: Georgia, "Times New Roma
   .hero-visual { width: 100%; height: 100%; }
   .hero-image-wrap img { object-position: 69% center; opacity: .69; }
   .hero-image-fade { background: linear-gradient(90deg, rgba(17, 19, 19, .97), rgba(17, 19, 19, .65) 65%, rgba(17, 19, 19, .32)), linear-gradient(0deg, rgba(17, 19, 19, .8), transparent 55%, rgba(17, 19, 19, .4)); }
+  .hero-product-lineup { right: -7%; bottom: 1%; width: 78%; max-height: 44%; opacity: .9; }
   .hero-stamp { top: 15%; right: 7%; opacity: .74; }
   .hero-index { right: 9%; bottom: 16%; }
   .scroll-cue { display: none; }
