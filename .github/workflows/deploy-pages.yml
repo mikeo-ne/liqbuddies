@@ -1,5 +1,6 @@
 name: Deploy Liq Budz preview
 
+# The session branch is the live preview source; every storefront adjustment is published here.
 on:
   push:
     branches:
